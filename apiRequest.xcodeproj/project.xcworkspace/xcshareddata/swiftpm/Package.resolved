@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "appopentracker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/chFlorian/AppOpenTracker",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3cb02ed0953c46d4ef534b513c29b9854e567461"
+      }
+    },
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "af4be924ad984cf4d16f4ae4df424e79a443d435"
+      }
+    }
+  ],
+  "version" : 2
+}
