@@ -91,7 +91,7 @@ struct CharacterCell: View {
                     HStack(alignment: .top) {
                         Text("Episodes:")
                             .font(.custom("AvenirLTStd-Black", size: 22))
-                            .padding(.trailing, 15)
+                            .padding(.trailing, 14)
                         
                         Text("\(charItem.episode.map({ $0.split(separator: "/").last ?? "" }).joined(separator: ", "))")
                             .font(.custom("AvenirLTStd-Roman", size: 22))

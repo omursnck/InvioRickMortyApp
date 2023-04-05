@@ -8,6 +8,17 @@
 import SwiftUI
 import Kingfisher
 
+extension View {
+    @ViewBuilder func phoneOnlyNavigationView() -> some View{
+        if UIDevice.current.userInterfaceIdiom == .phone{
+            self.navigationViewStyle(.stack)
+        }
+        else{
+            self
+        }
+    }
+}
+
 struct ContentView: View {
     @StateObject var viewModel = rmVM()
     @State var choosenPlanet: String = ""
@@ -386,6 +397,7 @@ struct ContentView: View {
             }
             
         }
+        .phoneOnlyNavigationView()
         .task {
             await viewModel.getData()
             await viewModel.getLocationData()
