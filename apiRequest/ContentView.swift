@@ -144,16 +144,7 @@ struct ContentView: View {
                                                     self.viewModel.locationArray += viewModel.updatedLocationArray
                                                     
                                                 }
-                                            }/*else if location.id > 120 && 127 > location.id {
-                                              print("next page of locations loaded , \(viewModel.count)")
-                                              
-                                              Task {
-                                              await viewModel.updateLocationData()
-                                              
-                                              self.viewModel.locationArray += viewModel.updatedLocationArray
-                                              
-                                              }
-                                              } */
+                                            }
                                             
                                         }
                                 })
